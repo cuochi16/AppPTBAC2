@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/contentHeader"
+            android:layout_width="295dp"
+            android:layout_height="73dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:text="Tính PT Bậc 2"
+            android:textAlignment="center"
+            android:textColor="#E94057"
+            android:textSize="25dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="295dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/black"
+            android:text="Ax2+Bx+C=0"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="normal|bold" />
+
+
+        <EditText
+            android:id="@+id/nhapa"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Enter Number A"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textViewa"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp" />
+
+        <EditText
+            android:id="@+id/nhapb"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Enter Number B"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textViewb"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp" />
+
+        <EditText
+            android:id="@+id/nhapc"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Enter Number C"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textViewc"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="Clear"
+                android:textSize="10dp"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/giaipt"
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Calculated"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Exit"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="55dp"
+                android:text="Result:  "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="232dp"
+                android:layout_height="102dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#00000000"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
